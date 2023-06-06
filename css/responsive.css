@@ -1,0 +1,60 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    html {
+        font-size: 3.25% !important;
+    }
+    .backpart-item-text,
+    .backpart-pic {
+        width: 100%;
+        min-width: unset !important;
+    }
+    /* .hero-pic-bg,
+    .hero-pic-info-img img {
+        width: 100%;
+        height: auto;
+    } */
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    html {
+        font-size: 4.25%;
+    }
+    .hero-pic-bg-eclipse {
+        display: none;
+    }
+    .hero-pic-bg,
+    .hero-pic-info-img img {
+        width: 100%;
+        height: auto;
+    }
+    .backpart-pic {
+        margin-inline: 0;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    html {
+        font-size: 5.25%;
+    }
+    .header-menu,
+    .introduce,
+    .header-cta {
+        display: none;
+    }
+    .header-menu-mobile {
+        display: block;
+    }
+    .backpart .content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .backpart-pic {
+        margin-top: 50rem;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
