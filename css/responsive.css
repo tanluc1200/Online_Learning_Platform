@@ -11,8 +11,13 @@
     .about-pic-img {
         min-width: unset !important;
     }
-    .service-course {
+    .service-course,
+    .course-main {
         grid-template-columns: 1fr;
+    }
+    .video-player,
+    .video-info {
+        min-width: 100%;
     }
 }
 

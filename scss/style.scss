@@ -1,5 +1,6 @@
 $bg-color-gray: #e0eae5;
 $bg-color-white: #fff;
+$bg-color-white-80: #f5f5f5;
 $bg-color-green: #04704e;
 $bg-color-yellow-green: #b5ed3d;
 $bg-color-yellow: #ffcd00;
@@ -42,6 +43,7 @@ body {
     font-size: 16rem;
     height: 10000px;
     overflow-x: hidden;
+    background-color: $bg-color-white-80;
 }
 section:not(.backpart) {
     overflow: hidden;
@@ -252,9 +254,43 @@ section:not(.backpart) {
         flex-wrap: wrap;
         gap: 30rem 30rem;
     }
-    &-pic-info-img {
-        overflow: hidden;
-        border-radius: 12px;
+    &-pic {
+        &-info {
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease-in-out;
+        }
+        &-info-img {
+            display: inline-block;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            .hidden {
+                overflow: hidden;
+                border-radius: 12px;
+            }
+            position: relative;
+            border-radius: 12px;
+        }
+        &-info-circle {
+            position: absolute;
+            width: 54rem;
+            height: 54rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $text-color-black;
+            border-radius: 50%;
+            bottom: -22rem;
+            right: 50%;
+            transform: translateX(50%);
+            transition: all 0.3s ease-in-out;
+            i {
+                color: $text-color-white;
+            }
+        }
     }
     &-pic,
     &-text {
@@ -328,6 +364,7 @@ section:not(.backpart) {
             padding: 24rem;
             overflow: hidden;
             background: $bg-color-white;
+            border-radius: 12px;
             &-text {
                 margin-top: 30rem;
                 > span {
@@ -478,7 +515,7 @@ section:not(.backpart) {
     &-course {
         margin-top: 70rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         gap: 30rem;
         grid-auto-rows: 1fr;
         &-block {
@@ -505,6 +542,95 @@ section:not(.backpart) {
                 color: $text-color-black;
                 margin-block: 28rem 16rem;
             }
+        }
+    }
+}
+// courses
+.course {
+    background-color: $bg-color-gray;
+    padding-block: 100rem;
+    .content {
+        text-align: center;
+        .desc {
+            max-width: 570rem;
+            margin-inline: auto;
+            margin-top: 18rem;
+        }
+    }
+    &-main {
+        margin-top: 70rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 30rem;
+    }
+    .hero-pic-info {
+        transition: all 0.5s ease-in-out;
+        .hero-pic-info-circle {
+            i {
+                transition: all 0.5s linear;
+            }
+        }
+        &:hover {
+            background-color: $bg-color-orange;
+            * {
+                color: $text-color-white;
+            }
+            .hero-pic-info-circle {
+                background-color: $bg-color-yellow-green;
+                i {
+                    color: $text-color-black;
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    &-cta {
+        text-align: center;
+        margin-top: 70rem;
+        .btn {
+            background-color: $bg-color-yellow-green;
+            color: $text-color-black;
+        }
+    }
+}
+.video {
+    padding-block: 160rem;
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30rem 130rem;
+    }
+    &-player {
+        flex: 1;
+        min-width: 470px;
+        &-vid {
+            max-width: 100%;
+        }
+    }
+    &-info {
+        flex: 1;
+        min-width: 570px;
+        .desc {
+            margin-block: 18rem 28rem;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16rem;
+            .row {
+                align-items: center;
+                column-gap: 12rem;
+            }
+        }
+        .check {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #ffcd00;
         }
     }
 }
