@@ -8,11 +8,9 @@
         width: 100%;
         min-width: unset !important;
     }
-    /* .hero-pic-bg,
-    .hero-pic-info-img img {
-        width: 100%;
-        height: auto;
-    } */
+    .about-pic-img {
+        min-width: unset !important;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */

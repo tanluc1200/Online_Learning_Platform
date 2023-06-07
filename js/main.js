@@ -26,15 +26,24 @@ function handleClickBtnMenuMobile() {
         btn_list.classList.toggle("active");
         btn_icon.classList.toggle("fa-xmark");
     });
-    // btn.onclick = function () {
-    //     document
-    //         .querySelector(".header-menu-mobile-list")
-    //         .classList.toggle("active");
-    // };
+}
+function scaleZoomIMG() {
+    const listIMG = document.querySelectorAll("img");
+    listIMG.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+            console.log(item);
+            item.classList.add("active");
+        });
+        item.addEventListener("mouseleave", () => {
+            console.log(item);
+            item.classList.remove("active");
+        });
+    });
 }
 // oncload
 function onLoad() {
     goToTop();
     handleClickBtnMenuMobile();
+    scaleZoomIMG();
 }
 onLoad();
