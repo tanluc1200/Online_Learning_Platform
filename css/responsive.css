@@ -11,6 +11,9 @@
     .about-pic-img {
         min-width: unset !important;
     }
+    .service-course {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */

@@ -383,6 +383,19 @@ section:not(.backpart) {
   right: 50%;
   transform: translateX(50%);
 }
+.backpart-pic-circle {
+  position: absolute;
+  z-index: 88;
+  left: -22rem;
+  top: 72rem;
+  width: 56rem;
+  height: 56rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
 .backpart-item-text:nth-child(3) {
   flex: 1;
   flex-wrap: wrap;
