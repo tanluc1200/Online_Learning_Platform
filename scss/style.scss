@@ -779,6 +779,13 @@ section:not(.backpart) {
         row-gap: 50rem;
     }
     &-block {
+        > a {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                text-decoration: underline;
+                color: $bg-color-orange;
+            }
+        }
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -833,6 +840,10 @@ section:not(.backpart) {
                         height: 36rem;
                         background: $text-color-black;
                         border-radius: 50%;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background: $bg-color-orange;
+                        }
                         > i {
                             color: $text-color-white;
                             font-size: 16rem;

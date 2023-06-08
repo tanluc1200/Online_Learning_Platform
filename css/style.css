@@ -764,6 +764,13 @@ section:not(.backpart) {
   flex-direction: column;
   row-gap: 12rem;
 }
+.footer-block > a {
+  transition: all 0.3s ease-in-out;
+}
+.footer-block > a:hover {
+  text-decoration: underline;
+  color: #ff5f1a;
+}
 .footer-block > h3 {
   margin-bottom: 12rem;
   font-weight: 700;
@@ -815,6 +822,10 @@ section:not(.backpart) {
   height: 36rem;
   background: #032e32;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.footer-block:nth-child(4) > .row:nth-of-type(3) > span:hover {
+  background: #ff5f1a;
 }
 .footer-block:nth-child(4) > .row:nth-of-type(3) > span > i {
   color: #fff;
