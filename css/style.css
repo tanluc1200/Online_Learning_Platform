@@ -505,7 +505,7 @@ section:not(.backpart) {
 .service-course-block {
   padding: 44rem 22rem;
   background: #fff;
-  transition: 0.5s;
+  transition: all 0.9s ease-in-out;
   box-shadow: 0px 18px 46px rgba(3, 46, 50, 0.08);
   border-radius: 12px;
 }
@@ -547,7 +547,7 @@ section:not(.backpart) {
   gap: 30rem;
 }
 .course .hero-pic-info {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .course .hero-pic-info .hero-pic-info-circle i {
   transition: all 0.5s linear;
