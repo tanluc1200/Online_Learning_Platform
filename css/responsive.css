@@ -12,15 +12,27 @@
         min-width: unset !important;
     }
     .service-course,
-    .course-main {
+    .course-main,
+    .testimonial-main {
         grid-template-columns: 1fr;
     }
     .video-player,
     .video-info {
         min-width: 100%;
     }
+    .footer-block {
+        min-width: 100% !important;
+        align-items: center;
+    }
 }
-
+@media (max-width: 601px) {
+    .cta-group-pic {
+        display: none;
+    }
+    .cta-wrap {
+        width: 100%;
+    }
+}
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
     html {

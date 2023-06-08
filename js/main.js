@@ -44,6 +44,6 @@ function scaleZoomIMG() {
 function onLoad() {
     goToTop();
     handleClickBtnMenuMobile();
-    scaleZoomIMG();
+    // scaleZoomIMG();
 }
 onLoad();
